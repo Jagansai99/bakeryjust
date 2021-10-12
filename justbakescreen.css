@@ -1,0 +1,57 @@
+div.column{width: 40%;
+           float:left;
+           margin: 2px 50px;
+           background:url(bakeryimage.jpg) no-repeat ;
+          }        
+div.column h1{font-size:30px; 
+              color: #b22222;
+              margin-bottom: 20px;
+              text-align: center;
+             }
+div.column h1 p{text-decoration: underline;color: crimson;}             
+            
+div.column a{color:#00008b;
+             border: 1px none  ;
+             border-radius: 10px;
+             text-decoration: none;
+             background-color: rgba(0,0,0,.07);
+             transition: background-color 2s;margin-top: 20px;
+
+            }            
+div.column a:hover{background-color: rgba(0,0,0,.1); 
+                   color:orangered;
+                   border: 1px  #9400d3;
+                   
+                   }   
+
+div.row h2{margin: 20px;}
+
+  a.blink{
+    
+    line-height: 0px;
+    border:none;
+  }
+  span{
+    font-size: 11px;
+    font-family: italic;
+    color: #16f529;
+    animation: blink 1s linear infinite;
+    background-color: none;
+    border:none;
+  }
+@keyframes blink{
+0%{opacity: 0;}
+50%{opacity: .5;}
+100%{opacity: 1;}
+}
+a.blink span:hover{background: #ffd700;}
+/*Media-Queries*/
+
+@media screen and (max-width:500px) {
+
+ div.column{ background:url(simple3_image.jpg) no-repeat center; width:40%;background-size: 400px;}
+ div.column h2{ font-size:.8em;}
+
+}                    
+                   
+
